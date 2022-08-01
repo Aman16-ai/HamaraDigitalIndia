@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.HomeFragment"
+    android:background="@color/black">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:layout_editor_absoluteX="0dp"
+       app:layout_editor_absoluteY="-127dp"
+       >
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           >
+
+           <VideoView
+               android:id="@+id/video_view"
+               android:layout_width="match_parent"
+               android:layout_height="400dp"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintRight_toRightOf="parent"
+
+               />
+            <TextView
+                android:id="@+id/who_we_are_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/video_view"
+                android:text="Who We Are?"
+                android:fontFamily="@font/montserratbold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+           <TextView
+               android:id="@+id/who_we_are_content_tv"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toBottomOf="@+id/who_we_are_tv"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="5dp"
+               android:layout_marginRight="5dp"
+               android:text="We’re a diverse group of experienced, bright, resolute and of course HamaraDigitalIndia individuals based out of Delhi, India that range from designers to developers, strategists to marketers. If your digital endeavours are tied up in the matrix then we have the capability of devising a solution with the path of least resistance!"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintRight_toRightOf="parent"
+               android:fontFamily="@font/montserratregular"
+               android:textColor="#A4A49B"
+               android:textSize="15dp"
+               android:gravity="center"
+               />
+
+           <TextView
+               android:id="@+id/content_2_tv"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toBottomOf="@+id/who_we_are_content_tv"
+               android:layout_marginTop="12dp"
+               android:layout_marginLeft="10dp"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintRight_toRightOf="parent"
+               android:fontFamily="@font/montserratregular"
+               android:text="At HamaraDigitalIndia - \nEvery Idea Is Worth Exploring\nEvery Problem Is a New Opportunity\nEvery Solution Is a Fresh Beginning"
+               android:textColor="#57C7F2"
+               android:textSize="15dp"
+               />
+
+           <TextView
+               android:id="@+id/year_tv"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toBottomOf="@+id/content_2_tv"
+               android:layout_marginTop="12dp"
+               android:layout_marginLeft="10dp"
+               app:layout_constraintLeft_toLeftOf="parent"
+               android:fontFamily="@font/montserratbold"
+               android:text="7"
+               android:textColor="@color/white"
+               android:textSize="35dp"
+               />
+           <TextView
+               android:id="@+id/year_content_tv"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:textColor="@color/white"
+               android:layout_marginTop="12dp"
+               android:text="Year"
+               android:textSize="35sp"
+               android:layout_marginLeft="10dp"
+               android:fontFamily="@font/montserratbold"
+               app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/content_2_tv"
+               app:layout_constraintLeft_toRightOf="@id/year_tv"
+               />
+
+           <ImageView
+               android:id="@+id/img2"
+               android:layout_width="match_parent"
+               android:layout_height="500dp"
+               android:layout_marginTop="15dp"
+               app:layout_constraintTop_toBottomOf="@+id/year_content_tv"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintRight_toRightOf="parent"
+               android:src="@drawable/wwa_img"
+               android:scaleType="centerCrop"
+               />
+
+           <TextView
+               android:id="@+id/what_we_do_tv"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toBottomOf="@id/img2"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintRight_toRightOf="parent"
+               android:text="What We Do?"
+               android:textColor="@color/white"
+               android:layout_marginTop="20dp"
+               android:textSize="25sp"
+               android:layout_marginLeft="10dp"
+               android:fontFamily="@font/montserratbold"
+               android:textStyle="bold"
+               />
+
+           <TextView
+               android:id="@+id/what_we_do_content_tv"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toBottomOf="@id/what_we_do_tv"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintRight_toRightOf="parent"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="10dp"
+               android:textSize="15dp"
+               android:textColor="#A4A49B"
+               android:fontFamily="@font/montserratregular"
+               android:text="HamaraDigitalIndia is a full-service Best Digital Marketing Agency in Delhi, India offering coherent and bespoke digital marketing services for brands and startups, with a vision of building superior digital products and services. In other words, we give our clients the proverbial wings to make their ideas soar high in the digital landscape!"
+               />
+       </androidx.constraintlayout.widget.ConstraintLayout>
+   </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
