@@ -46,14 +46,14 @@
       </androidx.constraintlayout.widget.ConstraintLayout>
    </com.google.android.material.appbar.MaterialToolbar>>
 
-   <androidx.fragment.app.FragmentContainerView
-       android:id="@+id/nav_host_fragment"
-       android:name="androidx.navigation.fragment.NavHostFragment"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       app:defaultNavHost="true"
-       android:layout_below="@+id/toolbar"
-       app:navGraph="@navigation/navgraph" />
+      <androidx.fragment.app.FragmentContainerView
+          android:id="@+id/nav_host_fragment"
+          android:name="androidx.navigation.fragment.NavHostFragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@+id/toolbar"
+          app:defaultNavHost="true"
+          app:navGraph="@navigation/navgraph" />
    </RelativeLayout>
  <com.google.android.material.navigation.NavigationView
      android:layout_width="wrap_content"

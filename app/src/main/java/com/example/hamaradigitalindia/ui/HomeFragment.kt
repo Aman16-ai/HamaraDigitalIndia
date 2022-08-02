@@ -29,10 +29,10 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        binding.videoView.apply {
-            setVideoURI(Uri.parse("https://hamaradigitalindia.in/Video.mp4"))
-            start()
-        }
+//        binding.videoView.apply {
+//            setVideoURI(Uri.parse("https://hamaradigitalindia.in/Video.mp4"))
+//            start()
+//        }
 
 
         return view
